@@ -1,0 +1,108 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- 天空 (Sky) -->
+    <rect x="0" y="0" width="512" height="342" fill="#ADD8E6"/>
+
+    <!-- 地面 (Ground) -->
+    <rect x="0" y="342" width="512" height="170" fill="#32CD32"/>
+
+    <!-- 太阳 (Sun) -->
+    <g id="太阳" fill="#FFD700" stroke="#FFD700" stroke-width="4" stroke-linecap="round">
+        <circle cx="70" cy="70" r="30"/>
+        <g transform="translate(70,70)">
+            <line x1="0" y1="-30" x2="0" y2="-50"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(30)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(60)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(90)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(120)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(150)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(180)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(210)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(240)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(270)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(300)"/>
+            <line x1="0" y1="-30" x2="0" y2="-50" transform="rotate(330)"/>
+        </g>
+    </g>
+
+    <!-- 树 (Tree) -->
+    <g id="树">
+        <!-- 树干 -->
+        <path d="M80 512 L100 512 L110 332 L70 332 Z" fill="#8B4513"/>
+        <!-- 树冠 (茂盛且密集，不规则圆形或椭圆形) -->
+        <circle cx="90" cy="270" r="70" fill="#90EE90"/>
+        <circle cx="130" cy="220" r="50" fill="#228B22"/>
+        <circle cx="50" cy="230" r="40" fill="#228B22"/>
+    </g>
+
+    <!-- 土坡 (Dirt Hill) -->
+    <polygon points="280,512 480,512 480,342" fill="#A0522D"/>
+
+    <!-- 房子 (House) -->
+    <g id="房子">
+        <!-- 墙壁 -->
+        <rect x="380" y="380" width="100" height="132" fill="#FA8072"/>
+        <!-- 屋顶 -->
+        <path d="M370 380 L490 380 L430 320 Z" fill="#DC143C"/>
+        <!-- 烟囱 -->
+        <rect x="445" y="340" width="20" height="40" fill="#DC143C"/>
+        <!-- 门 -->
+        <rect x="420" y="450" width="40" height="62" fill="#DC143C"/>
+        <!-- 半圆形窗户 (屋顶下方) -->
+        <path d="M410 400 L410 380 A 20 20 0 0 1 450 380 L450 400 Z" fill="#ADD8E6"/>
+        <!-- 方形窗户 (主墙面) -->
+        <rect x="395" y="425" width="30" height="30" fill="#ADD8E6"/>
+        <line x1="395" y1="440" x2="425" y2="440" stroke="#696969" stroke-width="2"/>
+        <line x1="410" y1="425" x2="410" y2="455" stroke="#696969" stroke-width="2"/>
+    </g>
+
+    <!-- 红色汽车 (Red Car) -->
+    <g id="红色汽车" transform="translate(350, 442) rotate(-40.36 30 15)">
+        <!-- 车身 -->
+        <rect x="0" y="0" width="60" height="30" rx="8" ry="8" fill="#FF0000"/>
+        <!-- 前窗 -->
+        <rect x="5" y="5" width="20" height="10" rx="3" ry="3" fill="#B0C4DE"/>
+        <!-- 后窗 -->
+        <rect x="35" y="5" width="15" height="10" rx="3" ry="3" fill="#B0C4DE"/>
+        <!-- 轮胎 -->
+        <circle cx="15" cy="30" r="8" fill="#696969"/>
+        <circle cx="45" cy="30" r="8" fill="#696969"/>
+    </g>
+
+    <!-- 第一只鸟旁边的树枝 (Branch near First Bird) -->
+    <g id="第一只鸟旁边的树枝">
+        <rect x="360" y="100" width="80" height="10" rx="5" ry="5" fill="#D2B48C"/>
+        <circle cx="420" cy="95" r="10" fill="#32CD32"/>
+        <circle cx="370" cy="105" r="8" fill="#32CD32"/>
+    </g>
+
+    <!-- 第一只鸟 (First Bird) -->
+    <g id="第一只鸟" transform="translate(420,80)">
+        <!-- Main body brown -->
+        <path d="M0 20 Q10 10 25 10 T40 20 Q30 30 15 30 T0 20 Z" fill="#A52A2A"/>
+        <!-- Orange-red chest/belly -->
+        <path d="M10 25 Q20 30 30 25 Q25 20 15 20 Z" fill="#FF4500"/>
+        <!-- Blue-grey wing, spread -->
+        <path d="M5 15 Q-5 0 20 5 L15 15 Z" fill="#778899" transform="rotate(-10 10 15)"/>
+        <!-- Blue-grey tail -->
+        <path d="M0 20 Q-5 25 -10 25 Q-5 30 0 30 Z" fill="#778899"/>
+        <!-- Orange beak -->
+        <polygon points="40,18 45,20 40,22" fill="#FFA500"/>
+        <!-- Eye (small dot) -->
+        <circle cx="35" cy="18" r="2" fill="black"/>
+    </g>
+
+    <!-- 第二只鸟 (Second Bird) -->
+    <g id="第二只鸟" transform="translate(430,240)">
+        <!-- Body greenish-blue -->
+        <path d="M0 15 Q10 5 20 5 T30 15 Q20 25 10 25 T0 15 Z" fill="#20B2AA"/>
+        <!-- Wing spread -->
+        <path d="M5 10 Q-5 0 15 0 L10 10 Z" fill="#20B2AA" transform="rotate(-5 10 10)"/>
+        <!-- Tail -->
+        <path d="M0 15 Q-5 18 -8 18 Q-5 20 0 20 Z" fill="#20B2AA"/>
+        <!-- Long pointed black beak -->
+        <polygon points="30,13 38,15 30,17" fill="#000000"/>
+        <!-- Eye -->
+        <circle cx="28" cy="13" r="1.5" fill="black"/>
+    </g>
+
+</svg>

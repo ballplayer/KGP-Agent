@@ -1,0 +1,9 @@
+google-generativeai
+networkx
+matplotlib
+pandas
+numpy
+pillow
+openpyxl
+streamlit
+flake8
