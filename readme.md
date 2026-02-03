@@ -1,4 +1,3 @@
-\
 # Multi-Modal Knowledge Graph → Exam Concept Pipeline
 
 This repository provides a compact pipeline that converts images (plus optional text) into a structured knowledge graph, prunes it with a hybrid approach, analyzes and visualizes results, and finally maps the pruned graph to likely exam knowledge points.
@@ -115,5 +114,6 @@ max-line-length = 120
 -----
 
 ## 📄 License
+
 
 This project is provided for educational and research purposes.
