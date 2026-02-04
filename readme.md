@@ -81,39 +81,8 @@ If you change KB text or the embedding model, re-run the KB embedding step — `
 
 ---
 
-## Next improvements (suggested)
-
-1. Replace template KB titles with real syllabus-aligned topic names & descriptions to improve match quality.
-2. Tune `match_kb` weights (alpha/beta/gamma in `match_kb.py`) and thresholds with a small validation set.
-3. If KB grows, use FAISS (or similar) for fast vector search.
-
----
-
-If you want, I can now: build a FAISS index from the cached embeddings, refine KB text contents, or run a small evaluation that prints top-5 evidence per run. Tell me which and I will proceed.
-
-
-      * Ensure your API Key is active and has access to `gemini-1.5-flash` and `text-embedding-004`.
-
-3.  **Matplotlib Chinese Characters Display as Boxes (□□)**:
-
-      * The scripts try to use standard fonts (`SimHei`, `Arial Unicode MS`). If you still see boxes, you may need to install a CJK font on your system or modify `plt.rcParams['font.sans-serif']`.
-
-4.  **Library deprecation & linter noise**:
-
-      * The project currently uses the `google.generativeai` client which is deprecated. You may see a FutureWarning at runtime; consider migrating to `google.genai` in the future.
-      * When running `flake8` you may see a lot of irrelevant warnings coming from local environment folders (for example `.conda`). To reduce noise, add a `.flake8` file in the project root with exclusions, for example:
-
-```ini
-[flake8]
-exclude = .venv,.env,__pycache__,.git,.conda,Output_*
-max-line-length = 120
-```
-
-      * After adding the above, re-run `flake8` to get focused lint results on the project files.
-
------
-
 ## 📄 License
 
 
 This project is provided for educational and research purposes.
+
